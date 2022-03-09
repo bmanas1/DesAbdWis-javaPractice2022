@@ -27,18 +27,18 @@ public class Q05_SwitchCase03 {
                 case 8: System.out.println("sekizyuz"); break;
                 case 9: System.out.println("dokuzyuz"); break;
             }
-        switch(onlarBasamagi){
-            case 0: System.out.println(""); break;
-            case 1: System.out.println("on"); break;
-            case 2: System.out.println("yirmi"); break;
-            case 3: System.out.println("otuz"); break;
-            case 4: System.out.println("kirk"); break;
-            case 5: System.out.println("elli"); break;
-            case 6: System.out.println("altmis"); break;
-            case 7: System.out.println("yetmis"); break;
-            case 8: System.out.println("seksen"); break;
-            case 9: System.out.println("doksan"); break;
-        }
+            switch(onlarBasamagi){
+                case 0: System.out.println(""); break;
+                case 1: System.out.println("on"); break;
+                case 2: System.out.println("yirmi"); break;
+                case 3: System.out.println("otuz"); break;
+                case 4: System.out.println("kirk"); break;
+                case 5: System.out.println("elli"); break;
+                case 6: System.out.println("altmis"); break;
+                case 7: System.out.println("yetmis"); break;
+                case 8: System.out.println("seksen"); break;
+                case 9: System.out.println("doksan"); break;
+            }
             switch(birlerBasamagi){
                 case 0: System.out.println(""); break;
                 case 1: System.out.println("bir"); break;
