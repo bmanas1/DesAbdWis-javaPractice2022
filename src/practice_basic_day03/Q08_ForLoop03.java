@@ -14,6 +14,14 @@ public class Q08_ForLoop03 {
         // 1 x 10 = 10
         // Yukarıdaki çarpım tablosunu 10 a kadar ekrana yazdırınız.
 
+    public static void main(String[] args) {
 
+        for (int i = 1; i <=10; i++){ //
+            for (int j = 1; j <=10; j++){
+                System.out.println(i + " x " + j +" = " + (i*j));
+            }
+            System.out.println();
+        }
+    }
 
 }
