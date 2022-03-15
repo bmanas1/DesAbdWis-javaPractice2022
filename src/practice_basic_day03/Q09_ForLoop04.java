@@ -25,5 +25,23 @@ public class Q09_ForLoop04 {
  Yanlis karakter girdiniz!
 
   */
+    public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
+        System.out.print("kelime giriniz :");
+        String kelime = scan.next();
 
+        String sesliHarfler = "aeiou"; //inglizce karakterleri aldim sadece, karisiklik olmasin diye..
+
+            for (int i = 0; i < sesliHarfler.length(); i++) {
+                if (sesliHarfler.contains(kelime.substring(0,1))) {  //sesli harfler girilen kelimenin ilk karakterini iceriyor mu?
+                                                                     //kullanici kelime girse bile ilk karaktere baksin..
+                    System.out.println("sesli harf");
+                    break; //sesli harfi bulunca aramaya devam etmesin, donguyu kirsin..
+                } else {
+                    System.out.println("sessiz harf");
+                    break;
+                }
+            }
+
+    }
 }
