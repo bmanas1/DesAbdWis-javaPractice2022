@@ -11,5 +11,23 @@ public class Q10_ForLoop05 {
 	        Girilen sayı=4
 	        Kareler toplamı=14
 	     */
+   public static void main(String[] args) {
+       Scanner scanner = new Scanner(System.in);
+
+       System.out.print("Bir tamsayi giriniz: ");
+       int sayi = scanner.nextInt();
+       int toplam = 0;
+
+       for (int i = 1; i < sayi; i++) { // esit deseydi  i<=sayi
+
+           // toplam = (i * i) + toplam;
+           toplam += (i * i) ;
+
+       }
+       System.out.println("Sayilarin kareleri toplami: " + toplam);
+
+   }
+
 
 }
+
