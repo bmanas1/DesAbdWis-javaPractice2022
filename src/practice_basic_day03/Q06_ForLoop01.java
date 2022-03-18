@@ -14,4 +14,20 @@ public class Q06_ForLoop01 {
          26
          13       */
 
+    public static void main(String[] args) {
+
+        int toplam = 0;
+        System.out.println("istenen sonuc : "); //defalarca yazirmasin diye dongu disina yazdim
+        for (int i = 100; i >= 0; i--) {
+            if (i % 13 == 0) {
+                System.out.println(i + " ");
+                toplam += i;
+
+            }
+
+        }
+        System.out.println();
+        System.out.println("toplam = " + toplam);
+
+    }
 }
