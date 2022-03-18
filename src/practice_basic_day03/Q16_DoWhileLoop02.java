@@ -18,16 +18,16 @@ public class Q16_DoWhileLoop02 {
         String word = "";
 
         do {
-            System.out.print("Enter a string :");
+            System.out.print("bir string giriniz :");
             word = scan.nextLine();
             if(word.length()<3) {
-                System.out.println("It is smaller than 3");
+                System.out.println("string 3 karakterden az");
             }
             if(word.length()%2==1 && word.length()>=3) {
-                System.out.println("middle of the word :" +word.charAt(word.length()/2));
+                System.out.println("string ortasindaki karakter :" +word.charAt(word.length()/2));
             }
             else {
-                System.out.println("You entered wrong word.");
+                System.out.println("You entered wrong word.(string deki karakter sayisi cift)");
             }
         }while(!(word.length()%2==1 && word.length()>=3) );
 
