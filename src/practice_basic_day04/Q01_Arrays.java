@@ -12,6 +12,14 @@ public class Q01_Arrays {
         */
 
 
+        int arr[] = {2,6,4,5,8,9};
+
+        for (int i = 0; i <arr.length; i++){
+            arr[i] *= arr[i]; //arr[i] = arr[i] * arr[i];
+        }
+
+        System.out.println("elemanlarin karesi :" + Arrays.toString(arr)); //elemanlarin karesi :[4, 36, 16, 25, 64, 81]
+
 
     }
 }
