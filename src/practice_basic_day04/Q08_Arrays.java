@@ -7,7 +7,7 @@ public class Q08_Arrays {
        *  {{"$12" , "$22" , "0$"},   {"€9" , "€40" , "$1" },  {"€12", "$2","$0"}}
        *  String de $ varsa 3.2 ile carp
        *  String de € varsa 4.2 ile carp
-       *  double olarak yazdir
+       *  elemanlarin toplamini double olarak yazdir
        */
 
 
