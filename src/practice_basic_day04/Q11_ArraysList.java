@@ -18,16 +18,42 @@ public class Q11_ArraysList {
 
          */
 
-        // 1. adim
 
+        // 1. adim
+        Scanner scan = new Scanner(System.in);
+        System.out.print("Kullanmak istediginiz username giriniz :");
 
         // 2. adim
+        String username = scan.nextLine().trim();
 
+        List<String> veriTabanindakiKullanicilar = new ArrayList<>();
+        veriTabanindakiKullanicilar.add("Ayse");
+        veriTabanindakiKullanicilar.add("Ahmet");
+        veriTabanindakiKullanicilar.add("Hasan");
+        veriTabanindakiKullanicilar.add("Ali");
+        veriTabanindakiKullanicilar.add("Mehmet");
+        veriTabanindakiKullanicilar.add("Derya");
 
         // 3. adim
-
+        boolean kullaniciIsmiVarMI = veriTabanindakiKullanicilar.contains(username);
 
         // 4. adim
+
+        if(kullaniciIsmiVarMI) {
+            System.out.println("Bu kullanici adi zaten alinmis.");
+        }else {
+            System.out.println("Bu kullanici adini kullanabilirsiniz");
+        }
+
+        if(kullaniciIsmiVarMI) {
+            int rastgeleSayi = new Random().nextInt(100000);
+            username = username + ""+rastgeleSayi;
+            System.out.println("Yeni kullanici adi olarak bunu kullanabilirsiniz : " + username);
+        }else {
+            System.out.println("Yeni kullanici adi : " + username);
+        }
+
+        scan.close();
 
 
 

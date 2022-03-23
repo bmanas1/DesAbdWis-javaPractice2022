@@ -9,6 +9,23 @@ public class Q05_Arrays {
          kac tane 3 e bolunebilen sayi vardir ?(negatif sayilar da dahil olsun)
         */
 
+        int[] arr = new int[8];
+        Scanner scan = new Scanner(System.in);
 
+        for (int i = 0; i < arr.length; i++) {
+            System.out.print(i + ".indexi sayiyi giriniz :");
+            arr[i] = scan.nextInt();
+        }
+
+        int count = 0;
+        for (int i = 0; i < arr.length; i++) {
+            if (arr[i] % 3 == 0) {
+
+                count++;
+            }
+        }
+
+        System.out.println("3 ile bolunebilen sayi :" + count);
+        scan.close();
     }
 }
