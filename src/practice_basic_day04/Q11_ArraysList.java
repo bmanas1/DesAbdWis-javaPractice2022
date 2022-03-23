@@ -34,6 +34,7 @@ public class Q11_ArraysList {
         veriTabanindakiKullanicilar.add("Mehmet");
         veriTabanindakiKullanicilar.add("Derya");
 
+
         // 3. adim
         boolean kullaniciIsmiVarMI = veriTabanindakiKullanicilar.contains(username);
 
