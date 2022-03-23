@@ -14,6 +14,7 @@ public class Q03 {
         int sayi = scan.nextInt();
 
         boolean asalMi= true;
+
        if(sayi>=2){
            for (int i = 2; i <sayi;i++){
                if(sayi%i==0 && sayi!=0 && sayi!=1){
