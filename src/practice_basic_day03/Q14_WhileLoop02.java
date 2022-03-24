@@ -9,17 +9,19 @@ public class Q14_WhileLoop02 {
         */
     public static void main(String[] args) {
 
-        Scanner scan = new Scanner(System.in);
-        String okunan = "";
 
-        do {
-            System.out.print("Harf giriniz: ");
-            okunan = scan.next();
-            System.out.println("Program calisiyor");
-        } while (!okunan.equalsIgnoreCase("x"));
+        Scanner scan=new Scanner(System.in);
+        System.out.print("Lütfen bir sayi giriniz :");
+        int sayi =scan.nextInt();
 
-        System.out.println("Program bitti");
+        //int count=0; kod calisiyor ama while kural baslangcc degeri gereklidir
+        while(sayi>0)
+        {
+            if (sayi%2==1)
+                System.out.println(sayi);
 
+            sayi--;
+        }
         scan.close();
     }
 

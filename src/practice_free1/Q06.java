@@ -1,4 +1,4 @@
-package practice_free;
+package practice_free1;
 
 import java.util.Scanner;
 

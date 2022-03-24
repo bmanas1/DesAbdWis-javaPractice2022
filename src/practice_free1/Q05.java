@@ -1,4 +1,4 @@
-package practice_free;
+package practice_free1;
 
 public class Q05 {
     // 1 x 1 = 1

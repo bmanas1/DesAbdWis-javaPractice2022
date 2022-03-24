@@ -1,4 +1,4 @@
-package practice_free;
+package practice_free1;
 
 public class Q03 {
    /*   Interview Question
