@@ -17,14 +17,14 @@ public class Q03 {
 
        if(sayi>=2){
            for (int i = 2; i <sayi;i++){
-               if(sayi%i==0 && sayi!=0 && sayi!=1){
+               if(sayi%i==0){
                    asalMi = false;
                    break;
                }
            }
            if(asalMi) System.out.println("sayi asaldir");
            else System.out.println("sayi asal degildir");
-       }
+       }else System.out.println("sayi asal degildir"); //bu else yi 0 ve 1 in asal sayi olmadigini gostermekicin ekledik
     }
 
 }
