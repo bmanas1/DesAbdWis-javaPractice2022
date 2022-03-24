@@ -24,7 +24,7 @@ public class Q03 {
            }
            if(asalMi) System.out.println("sayi asaldir");
            else System.out.println("sayi asal degildir");
-       }else System.out.println("sayi asal degildir"); //bu else yi 0 ve 1 in asal sayi olmadigini gostermekicin ekledik
+       }else System.out.println("sayi asal degildir"); //bu else yi 0 ve 1 in asal sayi olmadigini gostermek icin ekledik
     }
 
 }
