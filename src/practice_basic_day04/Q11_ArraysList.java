@@ -19,13 +19,6 @@ public class Q11_ArraysList {
          */
 
 
-        // 1. adim
-        Scanner scan = new Scanner(System.in);
-        System.out.print("Kullanmak istediginiz username giriniz :");
-
-        // 2. adim
-        String username = scan.nextLine().trim();
-
         List<String> veriTabanindakiKullanicilar = new ArrayList<>();
         veriTabanindakiKullanicilar.add("Ayse");
         veriTabanindakiKullanicilar.add("Ahmet");
@@ -34,6 +27,14 @@ public class Q11_ArraysList {
         veriTabanindakiKullanicilar.add("Mehmet");
         veriTabanindakiKullanicilar.add("Derya");
 
+        System.out.println("veriTabanindakiKullanicilar = " + veriTabanindakiKullanicilar);
+
+        // 1. adim
+        Scanner scan = new Scanner(System.in);
+        System.out.print("Kullanmak istediginiz username giriniz :");
+
+        // 2. adim
+        String username = scan.nextLine().trim();
 
         // 3. adim
         boolean kullaniciIsmiVarMI = veriTabanindakiKullanicilar.contains(username);

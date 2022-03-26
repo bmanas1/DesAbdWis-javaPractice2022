@@ -34,14 +34,14 @@ public class Q08 {
         String username = scan.nextLine().trim();
 
 
-        //4.adim
+        //3.adim
         if(databaseIsim.contains(username)) {
             System.out.println("Bu kullanici adi zaten alinmis.");
         }else {
             System.out.println("Bu kullanici adini kullanabilirsiniz");
         }
 
-        //5.adim
+        //4. ve 5.adim
         if(databaseIsim.contains(username)) {
             int rastgeleSayi = new Random().nextInt(100);
             username = username + ""+rastgeleSayi;
