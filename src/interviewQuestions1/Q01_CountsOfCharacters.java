@@ -3,7 +3,7 @@ package interviewQuestions1;
 import java.util.Arrays;
 import java.util.Scanner;
 
-public class Q01 {
+public class Q01_CountsOfCharacters {
    /*
      Kullanicidan bir String aliniz.
      String'de var olan her character'in sayisini ekrana yazdiriniz.

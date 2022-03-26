@@ -13,7 +13,7 @@ public class Q10_Arrays {
         str = str.replace(" ", ""); // str = "Verilenbircumledekibosluklarhariccharactersayisinibulunuz."
 
         String harf[] = str.split("");
-        System.out.println(harf.length);
+        System.out.println(harf.length); //58
 
         //2.yol
 
@@ -23,10 +23,10 @@ public class Q10_Arrays {
 
         String kelime[] = str1.split(" ");
         int boslukSayisi = kelime.length - 1;
-        System.out.println(boslukSayisi);
+        System.out.println(boslukSayisi); //7
 
         String character[] = str1.split("");
-        System.out.println(character.length - boslukSayisi);
+        System.out.println(character.length - boslukSayisi); //58
     }
 
 

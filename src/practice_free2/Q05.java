@@ -1,5 +1,7 @@
 package practice_free2;
 
+import java.util.Arrays;
+
 public class Q05 {
     	/*
         given an int array and find the squares of the elements
@@ -7,4 +9,12 @@ public class Q05 {
         Example:{2,6,4,5,8,9}
         output:{4,36,16,25,64,81}
         */
+        public static void main(String[] args) {
+            int arr[] = {2,6,4,5,8,9};
+            for (int i = 0; i < arr.length; i++){
+                arr[i]*=arr[i]; //arr[i] = arr[i]*arr[i]
+            }
+            System.out.println("arraydeki elemanlarin karesi :" + Arrays.toString(arr));
+            //arraydeki elemanlarin karesi :[4, 36, 16, 25, 64, 81]
+        }
 }

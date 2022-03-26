@@ -2,7 +2,7 @@ package interviewQuestions1;
 
 import java.util.Scanner;
 
-public class Q05 {
+public class Q05_ForFlashBack_Q01 {
 
     public static void main(String[] args) {
 
