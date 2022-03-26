@@ -15,14 +15,6 @@ public class Q08 {
      */
 
     public static void main(String[] args) {
-        Scanner scan = new Scanner(System.in);
-        //1.adim
-        System.out.print("kullanmak istediginiz ismi giriniz :");
-
-        //2.adim
-        String username = scan.nextLine().trim();
-
-        //3.adim
         List<String> databaseIsim = new ArrayList();
         databaseIsim.add("Ayse");
         databaseIsim.add("Emsal");
@@ -31,18 +23,31 @@ public class Q08 {
         databaseIsim.add("Nur Betul");
         databaseIsim.add("Elif");
 
-        boolean usernameVarMi = databaseIsim.contains("username");
+        System.out.println("databaseIsim = " + databaseIsim);
+        //databaseIsim = [Ayse, Emsal, Safis, Gul, Nur Betul, Elif]
+
+        Scanner scan = new Scanner(System.in);
+        //1.adim
+        System.out.print("kullanmak istediginiz ismi giriniz :");
+
+        //2.adim
+        String username = scan.nextLine().trim();
+
 
         //4.adim
-        if (usernameVarMi) {
-            System.out.println("bu kullanici ismi zaten alinmistir");
-            int randomSayi = new Random().nextInt(100);
-            username = username + "" + randomSayi;
-            randomSayi++;
-            System.out.println("yeni kullanici adi olarak kullanabilirsiniz : " + username);
-        } else {
-            System.out.println("bu kullanici ismini kullanabilirsinz");
-            System.out.println("yeni kullanici adi " + username);
+        if(databaseIsim.contains(username)) {
+            System.out.println("Bu kullanici adi zaten alinmis.");
+        }else {
+            System.out.println("Bu kullanici adini kullanabilirsiniz");
+        }
+
+        //5.adim
+        if(databaseIsim.contains(username)) {
+            int rastgeleSayi = new Random().nextInt(100);
+            username = username + ""+rastgeleSayi;
+            System.out.println("Yeni kullanici adi olarak bunu kullanabilirsiniz : " + username);
+        }else {
+            System.out.println("Yeni kullanici adi : " + username);
         }
 
 
