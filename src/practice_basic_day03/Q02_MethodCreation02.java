@@ -17,8 +17,8 @@ public class Q02_MethodCreation02 {
     private static void birKereYazdir(String str) {
         String sonuc="";
         for (int i=0;i<=str.length()-1;i++){  //int i=0;i<str.length();i++  bu sekilde de oluyor
-            if(!sonuc.contains(str.substring(i,i+1))){
-            sonuc += str.substring(i,i+1);
+            if(!sonuc.contains(str.substring(i,i+1))){ //tekrarsiz karakterleri dondurecegimiz sonucumuz, cumleden aldigimiz herhangi bir klarakteri icermiyorsa
+            sonuc += str.substring(i,i+1); //o zaman sonuca ekleyebilirisniz
         }}
         System.out.println(sonuc);
     }
