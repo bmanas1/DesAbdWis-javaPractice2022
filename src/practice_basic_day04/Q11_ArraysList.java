@@ -41,14 +41,16 @@ public class Q11_ArraysList {
 
         // 4. adim
 
-        if(kullaniciIsmiVarMI) {
+        if(kullaniciIsmiVarMI) {// kontrol mekanizmasi duplicationi onler
             System.out.println("Bu kullanici adi zaten alinmis.");
         }else {
             System.out.println("Bu kullanici adini kullanabilirsiniz");
         }
 
+        //5.adim
         if(kullaniciIsmiVarMI) {
-            int rastgeleSayi = new Random().nextInt(100000);
+            //Random random =new Random();
+            int rastgeleSayi = new Random().nextInt(100); //1 ile girilen sayi arasinda uniqe(essiz) sayi uretir
             username = username + ""+rastgeleSayi;
             System.out.println("Yeni kullanici adi olarak bunu kullanabilirsiniz : " + username);
         }else {
@@ -56,9 +58,6 @@ public class Q11_ArraysList {
         }
 
         scan.close();
-
-
-
 
 
     }
