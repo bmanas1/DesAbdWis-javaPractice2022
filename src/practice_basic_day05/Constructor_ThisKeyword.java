@@ -11,6 +11,16 @@ public class Constructor_ThisKeyword {
 	                                     type eklerseniz artik o constructor degil method'dur.
 	 4) Bir class'da birden fazla constructor olabilir. Ama constructor'larin parametreleri farkli olmalidir.
 	    Yani; farkli constructor uretmek icin overloading kurallarini kullanmaliyiz.
+
+	    Parametresiz bir constructor ile object uretirsek objenin degerleri instance veya static
+        olarak olusturulan variable’larin ilk degerlerine esit olur. Eger biz objenin degerlerini
+        degistirmek istersek tum variable’lar icin deger atamasi yapmam gerekir
+
+        Object uretirken degerleri de kendimiz vermek istersek parametreli constructor kullanmamiz
+        gerekir. Parametreli constructor olusturmak objeye bizim verdigimiz argument’leri atamak
+        icin yeterli degildir. Argumentleri objeye atayabilmek icin constructor body’si icinde
+        this.instanceVarIsmi = parametreIsmi; seklinde deger atamasi yapmam gerekir.
+        NOT : this ile deger atamasi yapilmayan parametreler icin hic bir islem yapilmaz
 	 */
 
     /*
