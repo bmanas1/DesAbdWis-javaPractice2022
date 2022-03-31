@@ -19,6 +19,7 @@ public class Q04_PerfectNumber {
         int sayi = scan.nextInt();
 
         mukemmelSayi(sayi);
+        System.out.println("******************");
         girilenSayiyaKadarOlanMukemmel(sayi);
     }
 
@@ -36,15 +37,32 @@ public class Q04_PerfectNumber {
         System.out.println();
 
         if (toplam == sayi) { //bolenlerin toplami sayiya esitese
-            System.out.println(sayi + " mukemmel sayidir");
+            System.out.println(sayi + " mukemmel sayidir\n");
         } else System.out.println(sayi + " mukemmel sayi degildir..");
 
     }
-        //soru 2 icin
-        private static void girilenSayiyaKadarOlanMukemmel(int sayi) {
-            for (int i= 1;i<=sayi;i++){
-                mukemmelSayi(i); //recursive method uyguladik
-            }
 
+    //soru 2 icin
+    private static void girilenSayiyaKadarOlanMukemmel(int girilensayi) {
+        Scanner scan = new Scanner(System.in);
+        System.out.print("bir sayi giriniz :");
+        girilensayi = scan.nextInt();
+        int toplam = 0;
+        for (int i = 1; i < girilensayi; i++) { //girilen sayiya kadar olan sayilara bakar
+            for (int j = 1; j < i; j++) { //burada bolenler kontrol ediliyor
+
+                if (i % j == 0) {  //sayinin herhangi bir boleni varsa(j-> bolen)
+
+                    toplam = toplam + j; //bolenleri toplama ekliyor
+                }
+
+            }
+            if (toplam == i) {
+
+                 System.out.println(i + " mukemmel sayidir");
+            }
+            toplam = 0;
+
+        }
     }
 }
