@@ -5,5 +5,7 @@ public class Q01_ForEach01 {
     // verilen array de once cift  olan sayilari, sonra da tek olan sayilari for each loop kullanarak yazdiriniz..
     public static void main(String[] args) {
 
+
+
     }
 }
